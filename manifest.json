@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Escaped_Fragment Helper",
+  "description": "This extension shows you what crawlers sees of your web applications. Replace hashbang (#!) of your page with _escaped_fragment_ and disable Javascript to see what crawlers see.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon_off.png",
+    "on_icon": "icon_on.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contentSettings",
+    "*://*/*"
+  ]
+}
